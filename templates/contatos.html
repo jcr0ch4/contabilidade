@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+  
+{% block content %}
+<div> 
+    <center>
+        <h2>Contatos<h2>
+        <h3>Formulário de contato <h3>
+    </center>
+    <form action="{{ url_for('login')}}" method=post>
+        <div class="mdl-grid mdl-js-layout mdl-layout">
+	    <div class="mdl-cell--6-col">
+	       <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                   <input class="mdl-textfield__input" type="text" id="nome"/>
+                   <label class="mdl-textfield__label" for="nome">Nome para contato </label>
+	      </div>
+	      <div class="mdl-cell--4-col">
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                      <input class="mdl-textfield__input" id="sername"/>
+                      <label class="mdl-textfield__label" for="username">Nome </label>
+                  </div>
+	      </div>
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                  <input class="mdl-textfield__input" type="password" id="password"/>
+                  <label class="mdl-textfield__label" for="password">E-Mail</label>
+              </div>
+	      <br>
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                  <input class="mdl-textfield__input" type="text" id="texto"/>
+                 <label class="mdl-textfield__label" for="texto">E-Mail</label>
+              </div>
+	      <br>
+              <button id="login-button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored mdl-color-text--white">
+                            Enviar
+              </button>
+          </div>
+          <div class="mdl-card__actions">
+              <button id='forgotpassword' class="mdl-button mdl-js-button mdl-button--primary">Esqueci a senha</button>
+          </div>
+	  <br>
+        </div>
+     </form>
+</div>
+<br>
+{% endblock %}

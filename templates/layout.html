@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<title>Contabil Simples</title>    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- RESPONSIVO -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <!-- Material Designer Lite --> 
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <!-- Fim Material Designer Lite -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <link rel="stylesheet" href="mdl-jquery-modal-dialog.css">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="static/img/android-desktop.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="static/img/ios-desktop.png">
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="static/img/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+    <link rel="shortcut icon" href="static/img/favicon.png">
+     <script src="mdl-jquery-modal-dialog.js"></script>    
+    </head>
+  <body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-color--grey-100 mdl-color-text--grey-600">
+      <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
+        <div class="mdl-layout__header-row">
+          <span class="android-title mdl-layout-title">
+ 	     <img  class="android-logo-image" src="{{ url_for('static', filename='img/contabilidade.png') }}"> 
+          </span>
+          <!-- Add spacer, to align navigation to the right in desktop -->
+          <div class="android-header-spacer mdl-layout-spacer"></div>
+          <!-- Navigation -->
+          <div class="android-navigation-container">
+            <nav class="android-navigation mdl-navigation">
+		    <a class="mdl-navigation__link " href="{{ url_for('home') }}">A empresa</a>
+		    <a class="mdl-navigation__link " href="{{ url_for('servicos') }}">Como funciona </a>
+		    <a class="mdl-navigation__link "  href="{{ url_for('planos') }}">Planos </a>
+		    <a class="mdl-navigation__link " href="{{ url_for('contatos') }}">Contato</a>
+	            <a class="mdl-navigation__link " href="{{ url_for('login') }}">Entrar </a>
+		   	 <button id="login-button" class="mdl-button mdl-button--colored">
+                       	     Criar Conta
+                    	</button>
+           </nav>
+        </div>
+          <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
+            <i class="material-icons">more_vert</i>
+          </button>
+          <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
+            <li class="mdl-menu__item">Configurações</li>
+            <li class="mdl-menu__item">Perfil</li>
+            <li class="mdl-menu__item">Sair</li>
+          </ul>
+        </div>
+      </div>
+ 
+<!-- 
+  <body>
+   
+    <header>
+  <div class="container">
+<h1 class="logo">LOGO</h1>
+    <strong><nav>
+      <ul class="menu">
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="{{ url_for('about') }}">About</a></li>
+        <li><a href="{{ url_for('site') }}">Site</a></li>
+        <li><a href="{{ url_for('login') }}">Login</a></li>
+        <li><a href="{{ url_for('cadempresa') }}">Cadastro de Empresa</a></li>
+
+      </ul>
+    </nav></strong>
+  </div>
+    
+    </header> 
+-->   
+    <div class="container">
+      {% block content %}
+      {% endblock %}
+    </div>
+    <script src="{{ url_for('static',filename='js/jquery-slim.min.js') }}")></script>
+    <script src="{{ url_for('static',filename='js/popper.min.js')}}"></script>
+    <script src="{{ url_for('static',filename='js/bootstrap.min.js')}}"></script>
+     <script src="{{ url_for('static',filename='js/materialize.min.js')}}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/site-style.css') }}">
+  </body>
+</html>

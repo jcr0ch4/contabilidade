@@ -1,0 +1,173 @@
+<html>
+
+<head>
+  <!-- Material Design Lite -->
+  <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+  <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.blue_grey-orange.min.css">
+  <!-- Material Design icon font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!-- Work in progress, please don't judge -->
+  <style type="text/css">
+    .about-content {
+      margin-left: 80px;
+      color: #8A8885;
+    }
+    
+    .components-content {
+      margin-left: 80px;
+      margin-top: 32px;
+    }
+.mdl-components .aside {
+  padding: 50px 20px;
+  background-color: hsl(0, 0%, 90%);
+}
+
+.option:first-child {
+    margin-top : 0px;
+}
+
+.option {
+  width: 200px;
+  display: inline-flex;
+  flex-direction: row;
+  -webkit-align-items: center;
+  margin-top : 20px;
+}
+
+.option-icon {
+  margin-right : 15px;
+}
+
+.option-caption {
+  font-weight: 400;
+  color: rgba(0, 0, 0, .66);
+  font-family: 'Roboto';
+}
+
+.mdl-components {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+
+.mdl-components__nav {
+  /*flex : 1;*/
+  max-width: 200px;
+  padding: 15px;
+}
+
+.mdl-components__pages {
+  flex: 3;
+  padding: 50px;
+}
+
+@media all and (max-width: 840px) {
+  .mdl-components {
+    display: block;
+  }
+  .mdl-components__nav {
+    width: auto;
+    margin-bottom: 15px;
+    margin-right: 0px;
+    max-width: none;
+  }
+  .mdl-components__pages {}
+  option-caption {
+    padding-left: 30px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, .66);
+    font-family: 'Roboto';
+  }
+  
+  .option {
+    margin-top : 0px;
+    width: 100px;
+    flex-direction: column;
+  }
+  .option-icon {
+    margin-right : 0px;
+    padding-bottom: 5px;
+  }
+  .mdl-components .aside {
+    padding: 20px 45px 10px 45px;
+  }
+}
+  </style>
+</head>
+
+<body>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title">Material Design Lite for GWT</span>
+      </div>
+    </header>
+    <main class="mdl-layout__content">
+      <section class="mdl-layout__tab-panel" id="about">
+        <div class="page-content about-content">
+          <h1>About.</h1>
+        </div>
+      </section>
+      <section class="mdl-layout__tab-panel is-active" id="components">
+        <div class="page-content">
+          <div class="mdl-grid mdl-grid--no-spacing">
+            <div class="mdl-components mdl-cell mdl-cell--12-col mdl-shadow--8dp">
+              <aside class="aside mdl-components__nav mdl-shadow--8dp">
+                <div class="option">
+                  <div class="option-icon">
+                    <div class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored mdl-js-ripple-effect">
+                      <i class="material-icons">looks_one</i>
+                    </div>
+                  </div>
+                  <div class="option-caption">Badges</div>
+                </div>
+                <div class="option">
+                  <div class="option-icon">
+                    <div class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored mdl-js-ripple-effect">
+                      <i class="material-icons">keyboard_arrow_right</i>
+                    </div>
+                  </div>
+                  <div class="option-caption">Buttons</div>
+                </div>
+                <div class="option">
+                  <div class="option-icon">
+                    <div class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored mdl-js-ripple-effect">
+                      <i class="material-icons">view_stream</i>
+                    </div>
+                  </div>
+                  <div class="option-caption">Layouts</div>
+                </div>
+                <div class="option">
+                  <div class="option-icon">
+                    <div class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored mdl-js-ripple-effect">
+                      <i class="material-icons">refresh</i>
+                    </div>
+                  </div>
+                  <div class="option-caption">Loading</div>
+                </div>
+              </aside>
+              <main id="buttonsContainer" class="mdl-components__pages">
+			SISTEMA
+
+	      </main>
+            </div>
+
+          </div>
+        </div>
+        <footer class="mdl-mini-footer">
+  <div class="mdl-mini-footer__left-section">
+    <div class="mdl-logo">Title</div>
+    <ul class="mdl-mini-footer__link-list">
+      <li><a href="#">Help</a></li>
+      <li><a href="#">Privacy & Terms</a></li>
+    </ul>
+  </div>
+</footer>
+      </section>
+      
+    </main>
+  </div>
+</body>
+
+</html>

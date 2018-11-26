@@ -1,0 +1,75 @@
+.mdl-components .aside {
+  padding: 50px 20px;
+  background-color: hsl(0, 0%, 90%);
+}
+
+.option:first-child {
+    margin-top : 0px;
+}
+
+.option {
+  width: 200px;
+  display: inline-flex;
+  flex-direction: row;
+  -webkit-align-items: center;
+  margin-top : 20px;
+}
+
+.option-icon {
+  margin-right : 15px;
+}
+
+.option-caption {
+  font-weight: 400;
+  color: rgba(0, 0, 0, .66);
+  font-family: 'Roboto';
+}
+
+.mdl-components {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+
+.mdl-components__nav {
+  /*flex : 1;*/
+  max-width: 200px;
+  padding: 15px;
+}
+
+.mdl-components__pages {
+  flex: 3;
+  padding: 50px;
+}
+
+@media all and (max-width: 840px) {
+  .mdl-components {
+    display: block;
+  }
+  .mdl-components__nav {
+    width: auto;
+    margin-bottom: 15px;
+    margin-right: 0px;
+    max-width: none;
+  }
+  .mdl-components__pages {}
+  option-caption {
+    padding-left: 30px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, .66);
+    font-family: 'Roboto';
+  }
+  
+  .option {
+    margin-top : 0px;
+    width: 100px;
+    flex-direction: column;
+  }
+  .option-icon {
+    margin-right : 0px;
+    padding-bottom: 5px;
+  }
+  .mdl-components .aside {
+    padding: 20px 45px 10px 45px;
+  }
+}

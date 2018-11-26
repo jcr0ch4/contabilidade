@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+{% block content %}
+<div >
+        <div id="cadempresa-conatiner" >
+	<div class="mdl-card__supporting-text">
+<form>
+  <div class="form-row">
+    <div class="form-group  mdl-textfield mdl-js-textfield mdl-textfield--floating-label col-md-6 mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+      <label class="mdl-textfield__label" for="inputCNPJ">CNPJ</label>
+      <input type="email" class="form-control mdl-textfield__input" id="inputCNPJ">
+    </div>
+    <div class="form-group  mdl-textfield mdl-js-textfield mdl-textfield--floating-label col-md-6 mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+      <label class="mdl-textfield__label" for="inputTipoPessoa">Tipo Pessoa</label>
+      <select id="inputState" class="form-control mdl-textfield__input">
+        <option selected></option>
+        <option>Pessoa Física</option>
+	      <option>Pessoa Jurídica</option>
+      </select>
+    </div>
+   </div>
+    <div class="form-group  mdl-textfield mdl-js-textfield mdl-textfield--floating-label col-md-6 mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <label class="mdl-textfield__label" for="inputNomeEmpresa">Nome da Empresa</label>
+    <input type="text" class="form-control mdl-textfield__input" id="inputNomeEmpresa">
+  </div>
+    <div class="form-group  mdl-textfield mdl-js-textfield mdl-textfield--floating-label col-md-6 mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <label class="mdl-textfield__label" for="inputNomeFantasia">Nome Fantasia</label>
+    <input type="text" class="form-control mdl-textfield__input" id="inputNomeFantasia">
+  </div>
+  <div class="form-row">
+    <div class="form-group  mdl-textfield mdl-js-textfield mdl-textfield--floating-label col-md-6">
+      <label class="mdl-textfield__label" for="inputCodigo">Código</label>
+      <input type="text" class="form-control mdl-textfield__input" id="inputCodigo">
+    </div>
+    <div class="form-group  mdl-textfield mdl-js-textfield mdl-textfield--floating-label col-md-2">
+      <label for="inputZip" class="mdl-textfield__label">Zip</label>
+      <input type="text" class="form-control mdl-textfield__input" id="inputZip">
+    </div>
+  </div>
+    <div class="form-group  mdl-textfield mdl-js-textfield mdl-textfield--floating-label col-md-2">
+    <label for="inputInscricaoEstadual" class="mdl-textfield__label">Inscrição Estadual</label>
+    <input type="text" class="form-control mdl-textfield__input" id="inputInscricaoEstadual">
+  </div>
+    <div class="form-group  mdl-textfield mdl-js-textfield mdl-textfield--floating-label col-md-2">
+    <label for="inputInscricaoMunicipal" class="mdl-textfield__label">Inscrição Municipal</label>
+    <input type="text" class="form-control mdl-textfield__input" id="inputInscricaoMunicipal">
+  </div> 
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Check me out
+      </label>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored mdl-color-text--white">Salvar</button>
+</form>
+            </div>
+
+            <div class="mdl-card__actions">
+            	<button id='forgotpassword' class="mdl-button mdl-js-button mdl-button--primary">Esqueci a senha</button>
+            </div>
+        </div>
+	</div>
+	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+{% endblock %}
+
